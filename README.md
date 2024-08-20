@@ -25,3 +25,6 @@ Finally, we consider a layered case by varying the cv parameter with depth. For 
 
 ![3D-Animation_Layered_60](https://github.com/user-attachments/assets/d602549d-0811-4aef-91e4-3dd707ba1cdc)
 
+We acknowledge computational resources and support provided by the Imperial College Research Computing Service (http://doi.org/10.14469/hpc/2232).
+
+
