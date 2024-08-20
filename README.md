@@ -13,20 +13,15 @@ $$
 
 For a trained model of 50,000 epochs, we obtain a minimal loss which has a negligible difference when compared to an exact solution obtained via FEM/FDM methods.
 
-![]
-(https://github.com/umarsdq/Terzaghi_PINNs/blob/main/notebook/Weights/Epochs_3D_50k.png)
+![Epochs_3D_50k](https://github.com/user-attachments/assets/09091535-44ea-455c-ab98-5acacf116e1e)
 
 We can also use the PINN to accurately predict the input parameters for any given exact solution. By changing the loss function to be between the PINN’s PDE solution and the exact solution, we minimise the loss by varying an initialised and unknown cv value. For a 2D case, the parameters converge to the true value fairly quickly: 
 
-![]
-(https://github.com/umarsdq/Terzaghi_PINNs/blob/main/results/Inversion/InvertedCxCz_2D_LR.png)
-
+![InvertedCxCz_2D_LR](https://github.com/user-attachments/assets/084a6127-b7b9-413b-b442-82c40ec50180)
 
 Finally, we consider a layered case by varying the cv parameter with depth. For the two cases of one layer and a typical sand, peat and soil layer, we achieve the following contour plots:
 
-![]
-(https://github.com/umarsdq/Terzaghi_PINNs/blob/main/results/Animation/3D-Animation_80.gif)
+![3D-Animation_80](https://github.com/user-attachments/assets/93f26311-7af9-44e1-bd5a-056667739eb6)
 
-![]
-(https://github.com/umarsdq/Terzaghi_PINNs/blob/main/results/Animation/3D-Animation_Layered_60.gif)
+![3D-Animation_Layered_60](https://github.com/user-attachments/assets/d602549d-0811-4aef-91e4-3dd707ba1cdc)
 
