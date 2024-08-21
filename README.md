@@ -1,15 +1,24 @@
-# Terzaghi_PINNs
+# Physics-informed Machine Learning for Forward and Inverse Terzaghi Consolidation Problems
+
 This repository contains files used for my UROP placement supervised by Dr. Truong Le, focussing on using physics-informed machine learning to create forward and inversion solvers for Terzaghi problems.
 
 In our research, we focus on developing a PINN model that solves the Terzaghi consolidation problem. Typically, this requires FEMs (finite element methods) which are computationally expensive.
 
 PINNs work by incorporating physics into a neural network model and can be used to solve a partial differential equation (PDE) given boundary conditions and constrains. This is particularly useful for modelling fluid flows and heat diffusion. 
 
+All PINNs have been developed using [SciANN](https://github.com/sciann/), a high-level artificial neural networks API, written in Python using [Keras](https://keras.io/)and [TensorFlow](https://www.tensorflow.org/) backends. As recommended by the developers, all code is based on `Python == 3.9` and `Tensorflow/Keras == 2.10`. The package allows for users to learn and change the physics of the problem simply.
+
+## 3D Terzaghi Problem
+
 The Terzaghi consolidation problem, which describes the pore pressure flow through a soil layer, can be described by the following PDE in 3-dimensions, where cx, cy, cz are the consolidation parameters for each dimension given in m^2/year, and u is the pore pressure.
 
 $$
 c_x \frac{\partial^2 u}{\partial x^2} + c_y \frac{\partial^2 u}{\partial y^2} + c_z \frac{\partial^2 u}{\partial z^2} = \frac{\partial u}{\partial t}
 $$
+
+## Method
+
+## Results
 
 For a trained model of 50,000 epochs, we obtain a minimal loss which has a negligible difference when compared to an exact solution obtained via FEM/FDM methods.
 
