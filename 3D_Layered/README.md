@@ -1,0 +1,1 @@
+Final notebooks to train and evaluate the pore pressure for a 3D multi-layered consolidation problem. All weights and training data provided, if you wish to test the training. Note that the PINN will struggle without a GPU-enabled training session - Google Colab is recommended if this is not possible locally. 

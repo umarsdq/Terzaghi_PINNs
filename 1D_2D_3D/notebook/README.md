@@ -1,0 +1,1 @@
+Python code developed during the UROP placement at Imperial College London. The multi-layered 3D problem is developed in the /final_notebook folder.

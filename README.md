@@ -1,4 +1,4 @@
-# Physics-informed Machine Learning for Forward and Inverse Terzaghi Consolidation Problems
+# Physics-informed Machine Learning for Solving Forward and Inverse 3D Multi Layered Terzaghi Consolidation Problems
 
 This repository contains files used for my UROP placement supervised by Dr. Truong Le, focussing on using physics-informed machine learning to create forward and inversion solvers for Terzaghi problems.
 
